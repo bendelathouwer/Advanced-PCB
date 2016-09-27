@@ -123,6 +123,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JPDSIEHP
 
+[Document6]
+DocumentPath=halfgelijders.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SHWPDJRR
+
+[Document7]
+DocumentPath=halgeleiders.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ULXVGBLE
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -1070,7 +1104,8 @@ UpdateVariants=1
 PartTypes=0
 
 [ToDoManager]
-ProjectToDo1=Name=conector probleem oplossen |UID=ORWVBTNQ
+ProjectToDo1=Name=conector probleem oplossen|State=1|UID=ORWVBTNQ
+ProjectToDo2=Name=afvlak condensatoren plaatsen tussen de VBAT en gnd~1'~1|UID=CMARHUSS
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
