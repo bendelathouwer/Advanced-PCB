@@ -1,0 +1,17 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"22-03-2041";"";
+"TraceParts.PartVersion";"1.1.7";"";
+"SUPPLIER";"Molex";"";
+"TraceParts.PartStatus";"Published";"";
+"ALLIED_STOCK_NUMBER";"70190629";"";
+"RS_STOCK_NUMBER";"467560P";"";
+"REVISION";"N";"";
+"DESIGN";"4 way straight PCB header,2.54mm pitch";"";
+"TraceParts.InstanceId";"10-16032010-1147227A1ZORNVUZAENY8XOK9324D0Y";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartTitle";"4 way straight PCB header,2.54mm pitch";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TIMESTAMP";"3/3/2010 16:09:05";"";
+"TraceParts.PartNumber";"10-16032010-114722";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:/F_RS_COMPONENTS/PSSS_435563/PSS_435683/PSF_435704/10-16032010-114722";"";
