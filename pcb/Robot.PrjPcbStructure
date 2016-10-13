@@ -1,2 +1,3 @@
 Record=TopLevelDocument|FileName=Top.SchDoc
+Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_LevelShifter|SchDesignator=U_LevelShifter|FileName=LevelShifter.SchDoc|SymbolType=Normal|RawFileName=LevelShifter.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_Voeding|SchDesignator=U_Voeding|FileName=Voeding.SchDoc|SymbolType=Normal|RawFileName=Voeding.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
