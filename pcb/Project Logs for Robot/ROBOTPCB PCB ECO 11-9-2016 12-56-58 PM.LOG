@@ -1,0 +1,109 @@
+Added Member To Class: ClassName=U_ATmegaMain Member=Component *1 Crystal
+Added Member To Class: ClassName=U_Atmega secondary Member=Component * Crystal
+Added Member To Class: ClassName=U_ESP8266 Member=Component C1 Cap Pol3
+Added Member To Class: ClassName=U_ESP8266 Member=Component C2 Cap Pol3
+Added Member To Class: ClassName=U_LevelShifter Member=Component C3 Cap Pol3
+Added Member To Class: ClassName=U_LevelShifter Member=Component C4 Cap Pol3
+Added Member To Class: ClassName=U_LevelShifter Member=Component C5 Cap Pol3
+Added Member To Class: ClassName=U_LevelShifter Member=Component C6 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C7 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C8 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C9 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C10 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C11 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C12 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C13 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C14 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C15 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C16 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C17 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C18 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C19 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C20 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C21 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C22 Cap Pol3
+Added Member To Class: ClassName=U_motordriver left side Member=Component C23 Cap Pol3
+Added Member To Class: ClassName=U_motordriver left side Member=Component C24 Cap Pol3
+Added Member To Class: ClassName=U_motordriver left side Member=Component C25 Cap Pol3
+Added Member To Class: ClassName=U_motordriver left side Member=Component C26 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C27 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C28 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C29 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C30 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C31 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C32 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C33 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C34 Cap Pol3
+Added Member To Class: ClassName=U_RC reciever Member=Component C35 Cap Pol3
+Added Member To Class: ClassName=U_RC reciever Member=Component C36 Cap Pol3
+Added Member To Class: ClassName=U_RC reciever Member=Component C37 Cap Pol3
+Added Member To Class: ClassName=U_RC reciever Member=Component C38 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C39 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C40 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C41 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C42 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C43 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C44 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C45 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C46 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C47 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C48 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C49 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C50 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C51 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C52 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C53 Cap Pol3
+Added Member To Class: ClassName=U_current sensors Member=Component C54 Cap Pol3
+Added Member To Class: ClassName=U_ADC Member=Component C55 Cap Pol3
+Added Member To Class: ClassName=U_ADC Member=Component C56 Cap Pol3
+Added Member To Class: ClassName=U_ADC Member=Component C57 Cap Pol3
+Added Member To Class: ClassName=U_ADC Member=Component C58 Cap Pol3
+Added Member To Class: ClassName=U_ADC Member=Component C59 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component CON1 ISP Programming header
+Added Member To Class: ClassName=U_Atmega secondary Member=Component CON2 ISP Programming header
+Added Member To Class: ClassName=Top Member=Component CON3 Schrew terminal
+Added Member To Class: ClassName=Top Member=Component CON4 Schrew terminal
+Added Member To Class: ClassName=Top Member=Component CON5 Schrew terminal
+Added Member To Class: ClassName=Top Member=Component CON6 Schrew terminal
+Added Member To Class: ClassName=U_encoder Member=Component CON7 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON8 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON9 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON10 Encoder
+Added Member To Class: ClassName=U_RC reciever Member=Component CON11 RCcon
+Added Member To Class: ClassName=U_RC reciever Member=Component CON12 RCcon
+Added Member To Class: ClassName=Top Member=Component CON13 Schrew terminal
+Added Member To Class: ClassName=U_ESP8266 Member=Component IC1 ESP8266 ESP-01
+Added Member To Class: ClassName=U_Voeding Member=Component L1 coil
+Added Member To Class: ClassName=U_Voeding Member=Component R1 Res3
+Added Member To Class: ClassName=U_Voeding Member=Component R2 111k
+Added Member To Class: ClassName=U_current sensors Member=Component R3 111k
+Added Member To Class: ClassName=U_current sensors Member=Component R4 111k
+Added Member To Class: ClassName=U_current sensors Member=Component R5 111k
+Added Member To Class: ClassName=U_current sensors Member=Component R6 111k
+Added Member To Class: ClassName=U_current sensors Member=Component R7 111k
+Added Member To Class: ClassName=U_ADC Member=Component R8 Res3
+Added Member To Class: ClassName=U_LevelShifter Member=Component U1 TXb0108
+Added Member To Class: ClassName=U_ATmegaMain Member=Component U2 ATmega162
+Added Member To Class: ClassName=U_Voeding Member=Component U3 TPS630xx
+Added Member To Class: ClassName=U_Voeding Member=Component U4 LD1117V33
+Added Member To Class: ClassName=U_Atmega secondary Member=Component U5 ATmega162
+Added Member To Class: ClassName=U_motordriver Member=Component U6 TB6612FGN
+Added Member To Class: ClassName=U_motordriver left side Member=Component U7 TB6612FGN
+Added Member To Class: ClassName=U_current sensors Member=Component U8 ACS711
+Added Member To Class: ClassName=U_current sensors Member=Component U9 ACS711
+Added Member To Class: ClassName=U_current sensors Member=Component U10 ACS711
+Added Member To Class: ClassName=U_current sensors Member=Component U11 ACS711
+Added Member To Class: ClassName=U_current sensors Member=Component U12 ACS711
+Added Member To Class: ClassName=U_ADC Member=Component U13 tlc1543
+Added Room: Name=Top
+Added Room: Name=U_ADC
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_current sensors
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_motordriver left side
+Added Room: Name=U_RC reciever
+Added Room: Name=U_Voeding
