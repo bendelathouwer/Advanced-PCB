@@ -1,9 +1,12 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [Robot.PrjPcb]
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [ROBOTPCB.PcbDoc]
+   Generated File[ROBOTPCB.RUL]
+   Generated File[ROBOTPCB.EXTREP]
+   Generated File[ROBOTPCB.REP]
 
 
-Files Generated   : 0
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 8:05:23 PM On 11/6/2016
+Finished Output Generation At 12:29:08 PM On 11/19/2016
