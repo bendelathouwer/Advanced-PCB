@@ -1,0 +1,42 @@
+Added Component: Designator=C27(C0805)
+Added Component: Designator=C28(C0805)
+Added Component: Designator=C29(C0805)
+Added Component: Designator=C30(C0805)
+Added Component: Designator=C31(C0805)
+Added Component: Designator=C32(C0805)
+Added Component: Designator=C33(C0805)
+Added Component: Designator=C34(C0805)
+Added Pin To Net: NetName=+5V Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=+5V Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=+5V Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Pin To Net: NetName=+5V Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=+5V Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=+5V Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=+5V Pin=C33-1
+Added Pin To Net: NetName=GND Pin=C33-2
+Added Pin To Net: NetName=+5V Pin=C34-1
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=GND Pin=U6-3
+Added Pin To Net: NetName=GND Pin=U6-4
+Added Pin To Net: NetName=GND Pin=U6-9
+Added Pin To Net: NetName=GND Pin=U6-10
+Added Member To Class: ClassName=U_encoder Member=Component C27 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C28 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C29 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C30 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C31 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C32 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C33 Cap Pol3
+Added Member To Class: ClassName=U_encoder Member=Component C34 Cap Pol3
+Added Room: Name=Top
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding

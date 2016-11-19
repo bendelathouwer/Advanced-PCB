@@ -515,23 +515,6 @@ GenerateClassCluster=0
 DocumentUniqueId=PUQCITRO
 
 [Document29]
-DocumentPath=current sensors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=12
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PVMVHMST
-
-[Document30]
 DocumentPath=TLC1543CDWG4.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -548,24 +531,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FABPXHLW
 
-[Document31]
-DocumentPath=ADC.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=13
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NAMQAETL
-
-[Document32]
+[Document30]
 DocumentPath=ROBOTPCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -582,7 +548,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AFWSPJVQ
 
-[Document33]
+[Document31]
 DocumentPath=ultrasoon sensor.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -599,7 +565,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YODTPOUJ
 
-[Document34]
+[Document32]
 DocumentPath=robotJob.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -616,7 +582,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document33]
 DocumentPath=LM78xx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
