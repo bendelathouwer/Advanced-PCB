@@ -6,6 +6,8 @@
  */ 
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
+
 void trigUltrasoon(void);
 
 int main(void)
@@ -16,3 +18,23 @@ int main(void)
     }
 }
 
+void trigUltrasoon(void)
+{
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+	__asm("nop");
+}

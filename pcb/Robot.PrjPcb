@@ -603,6 +603,30 @@ DocumentUniqueId=EGFHKWTI
 DocumentPath=Project Outputs for Robot\Robot.xlsx
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.TXT
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0

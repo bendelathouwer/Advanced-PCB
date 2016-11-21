@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: ROBOTPCB.PcbDoc   11/19/2016  12:29:07 PM
+NCDrill File Report For: ROBOTPCB.PcbDoc   11/21/2016  9:13:35 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,15 +7,15 @@ ASCII RoundHoles File : ROBOTPCB.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.305mm)                                           Round             55        PTH        23.25inch (590.48mm)
+T1      12mil (0.305mm)                                           Round             56        PTH        23.39inch (594.15mm)
 T2      25mil (0.64mm)                                            Round             2         PTH        2.33inch (59.11mm)
 T3      28mil (0.711mm)                                           Round             3         PTH        3.42inch (86.89mm)
-T4      30mil (0.762mm)                                           Round             54        PTH        22.70inch (576.55mm)
+T4      30mil (0.762mm)                                           Round             54        PTH        22.95inch (583.02mm)
 T5      39mil (0.99mm)                                            Round             6         PTH        0.76inch (19.30mm)
 T6      39mil (1mm)                                               Round             6         PTH        1.99inch (50.65mm)
 T7      98mil (2.5mm)                                             Round             1         PTH        0.00inch (0.00mm)
 T8      118mil (3mm)                                              Round             3         PTH        9.67inch (245.70mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              130
+Totals                                                                              131
 
 Total Processing Time (hh:mm:ss) : 00:00:00

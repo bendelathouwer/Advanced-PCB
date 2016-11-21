@@ -1,12 +1,24 @@
 Output: Gerber Files
 Type  : Gerber
 From  : Variant [[No Variations]] of PCB Document [ROBOTPCB.PcbDoc]
+   Generated File[ROBOTPCB.GTL]
+   Generated File[ROBOTPCB.GBL]
+   Generated File[ROBOTPCB.GTO]
+   Generated File[ROBOTPCB.GTP]
+   Generated File[ROBOTPCB.GTS]
+   Generated File[ROBOTPCB.GBS]
+   Generated File[ROBOTPCB.GBP]
+   Generated File[ROBOTPCB.GBO]
+   Generated File[ROBOTPCB.GKO]
+   Generated File[ROBOTPCB.GM1]
+   Generated File[ROBOTPCB.GM13]
+   Generated File[ROBOTPCB.GM15]
    Generated File[ROBOTPCB.RUL]
    Generated File[ROBOTPCB.EXTREP]
    Generated File[ROBOTPCB.REP]
 
 
-Files Generated   : 3
+Files Generated   : 15
 Documents Printed : 0
 
-Finished Output Generation At 12:29:08 PM On 11/19/2016
+Finished Output Generation At 9:13:36 AM On 11/21/2016
