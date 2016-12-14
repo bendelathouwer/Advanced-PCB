@@ -6,11 +6,11 @@
  */ 
 
 #include <avr/io.h>
-
+#include <avr/interrupt.h>
 
 
 void trigUltrasoon(void);
-
+void mesureDistance(void );
 int main(void)
 {
     
@@ -21,6 +21,8 @@ int main(void)
 
 void trigUltrasoon(void)// trigering the ultrasonic sensor 
 {
+	// trigering ultrasonic sensor 
+	PORTD |= (1<<PORTD6);
 	asm("nop");
 	asm("nop");
 	asm("nop");
@@ -37,4 +39,5 @@ void trigUltrasoon(void)// trigering the ultrasonic sensor
 	asm("nop");
 	asm("nop");
 	asm("nop");
+	PORTD &= ~(1<<PORTD6);
 }

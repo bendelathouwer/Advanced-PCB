@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=+5V Pin=C7-1
+Removed Pin From Net: NetName=+5V Pin=C8-1
+Removed Pin From Net: NetName=VMOT Pin=F1-1
+Removed Pin From Net: NetName=+5V Pin=U3-3
+Added Pin To Net: NetName=VMOT Pin=C9-1
+Added Pin To Net: NetName=VMOT Pin=C10-1
+Added Pin To Net: NetName=+5V Pin=F1-2
+Added Pin To Net: NetName=VMOT Pin=U3-1
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_1 Pin=C8-1
+Added Pin To Net: NetName=NetC7_1 Pin=F1-1
+Added Pin To Net: NetName=NetC7_1 Pin=U3-3
+Added Net: Name=NetC7_1
+Added Member To Class: ClassName=U_Voeding Member=Component F1 fuse

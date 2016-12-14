@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=NetCON10_3 Pin=U2-24
+Removed Pin From Net: NetName=NetCON10_2 Pin=U2-25
+Removed Pin From Net: NetName=NetCON9_2 Pin=U2-26
+Removed Pin From Net: NetName=NetCON9_3 Pin=U2-27
+Change Component Footprint: Designator=CON7 Old Footprint= New Footprint=ENCODER
+Change Component Footprint: Designator=CON8 Old Footprint= New Footprint=ENCODER
+Change Component Footprint: Designator=CON9 Old Footprint= New Footprint=ENCODER
+Change Component Footprint: Designator=CON10 Old Footprint= New Footprint=ENCODER
+Added Pin To Net: NetName=NetCON10_3 Pin=U2-34
+Added Pin To Net: NetName=NetCON10_2 Pin=U2-35
+Added Pin To Net: NetName=NetCON9_2 Pin=U2-36
+Added Pin To Net: NetName=NetCON9_3 Pin=U2-37
+Added Member To Class: ClassName=U_Atmega secondary Member=Component U5 ATmega162
+Added Room: Name=Top
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_RC reciever
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding

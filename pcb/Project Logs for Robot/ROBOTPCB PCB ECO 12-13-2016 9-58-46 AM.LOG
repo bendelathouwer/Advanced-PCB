@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=+5V Pin=CON9-1
+Removed Pin From Net: NetName=GND Pin=CON9-4
+Removed Pin From Net: NetName=+5V Pin=CON10-1
+Removed Pin From Net: NetName=GND Pin=CON10-4
+Removed Pin From Net: NetName=NetCON8_3 Pin=U2-29
+Removed Pin From Net: NetName=NetCON8_2 Pin=U2-30
+Removed Pin From Net: NetName=NetCON7_3 Pin=U2-31
+Removed Pin From Net: NetName=NetCON7_2 Pin=U2-32
+Removed Member From Class: ClassName=U_encoder Member=CON9
+Removed Member From Class: ClassName=U_encoder Member=CON10
+Added Component: Designator=CON5(ENCODER)
+Added Component: Designator=CON6(ENCODER)
+Added Pin To Net: NetName=+5V Pin=CON5-1
+Added Pin To Net: NetName=+5V Pin=CON6-1
+Added Pin To Net: NetName=NetCON8_3 Pin=U2-34
+Added Pin To Net: NetName=NetCON8_2 Pin=U2-35
+Added Pin To Net: NetName=NetCON7_2 Pin=U2-36
+Added Pin To Net: NetName=NetCON7_3 Pin=U2-37
+Added Pin To Net: NetName=NetCON5_2 Pin=CON5-2
+Added Pin To Net: NetName=NetCON5_2 Pin=U2-32
+Added Net: Name=NetCON5_2
+Added Pin To Net: NetName=NetCON5_3 Pin=CON5-3
+Added Pin To Net: NetName=NetCON5_3 Pin=U2-31
+Added Net: Name=NetCON5_3
+Added Pin To Net: NetName=NetCON6_2 Pin=CON6-2
+Added Pin To Net: NetName=NetCON6_2 Pin=U2-30
+Added Net: Name=NetCON6_2
+Added Pin To Net: NetName=NetCON6_3 Pin=CON6-3
+Added Pin To Net: NetName=NetCON6_3 Pin=U2-29
+Added Net: Name=NetCON6_3
+Added Member To Class: ClassName=U_encoder Member=Component CON5 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON6 Encoder
+Added Room: Name=Top
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_RC reciever
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding

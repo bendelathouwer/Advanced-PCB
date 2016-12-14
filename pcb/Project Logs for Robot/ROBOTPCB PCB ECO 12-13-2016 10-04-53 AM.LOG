@@ -1,0 +1,30 @@
+Added Component: Designator=CON5(ENCODER)
+Added Component: Designator=CON6(ENCODER)
+Added Component: Designator=CON7(ENCODER)
+Added Component: Designator=CON8(ENCODER)
+Added Pin To Net: NetName=+5V Pin=CON5-1
+Added Pin To Net: NetName=NetCON5_2 Pin=CON5-2
+Added Pin To Net: NetName=NetCON5_3 Pin=CON5-3
+Added Pin To Net: NetName=+5V Pin=CON6-1
+Added Pin To Net: NetName=NetCON6_2 Pin=CON6-2
+Added Pin To Net: NetName=NetCON6_3 Pin=CON6-3
+Added Pin To Net: NetName=+5V Pin=CON7-1
+Added Pin To Net: NetName=NetCON7_2 Pin=CON7-2
+Added Pin To Net: NetName=NetCON7_3 Pin=CON7-3
+Added Pin To Net: NetName=+5V Pin=CON8-1
+Added Pin To Net: NetName=NetCON8_2 Pin=CON8-2
+Added Pin To Net: NetName=NetCON8_3 Pin=CON8-3
+Added Member To Class: ClassName=U_encoder Member=Component CON5 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON6 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON7 Encoder
+Added Member To Class: ClassName=U_encoder Member=Component CON8 Encoder
+Added Room: Name=Top
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_RC reciever
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding
