@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for Robot
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -566,23 +566,6 @@ GenerateClassCluster=0
 DocumentUniqueId=YODTPOUJ
 
 [Document32]
-DocumentPath=robotJob.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document33]
 DocumentPath=LM78xx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -599,7 +582,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EGFHKWTI
 
-[Document34]
+[Document33]
 DocumentPath=INA219 sensor.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -616,7 +599,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JYDRRPWO
 
-[Document35]
+[Document34]
 DocumentPath=fuse.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -633,7 +616,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MXULYRXP
 
-[Document36]
+[Document35]
 DocumentPath=Job1.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -651,30 +634,82 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Robot\Robot.xlsx
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.EXTREP
 DItemRevisionGUID=
 
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GBL
+DItemRevisionGUID=
+
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.LDP
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.REP
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.RUL
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument7]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Robot\Gerber\ROBOTPCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument20]
 DocumentPath=Project Outputs for Robot\NC Drill\ROBOTPCB.TXT
 DItemRevisionGUID=
 
@@ -688,7 +723,7 @@ Variant=[No Variations]
 OutputJobsCount=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for Robot
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

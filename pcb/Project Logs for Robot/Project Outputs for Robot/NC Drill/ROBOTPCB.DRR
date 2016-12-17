@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ROBOTPCB.PcbDoc   12/15/2016  4:51:07 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ROBOTPCB.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.305mm)                                           Round             69        PTH        26.26inch (667.01mm)
+T2      28mil (0.711mm)                                           Round             2         PTH        1.95inch (49.62mm)
+T3      30mil (0.762mm)                                           Round             40        PTH        17.45inch (443.13mm)
+T4      32mil (0.8mm)                                             Round             12        PTH        5.36inch (136.18mm)
+T5      39mil (0.99mm)                                            Round             6         PTH        1.34inch (33.98mm)
+T6      39mil (1mm)                                               Round             6         PTH        1.99inch (50.65mm)
+T7      98mil (2.5mm)                                             Round             1         PTH        0.00inch (0.00mm)
+T8      118mil (3mm)                                              Round             3         PTH        10.60inch (269.30mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              139
+
+Total Processing Time (hh:mm:ss) : 00:00:00

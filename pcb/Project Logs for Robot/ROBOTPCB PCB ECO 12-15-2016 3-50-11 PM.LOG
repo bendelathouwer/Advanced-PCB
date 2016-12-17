@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=GND Pin=U4-1
+Removed Pin From Net: NetName=+5V Pin=U4-2
+Removed Pin From Net: NetName=+3.3V Pin=U4-3
+Removed Member From Class: ClassName=U_Voeding Member=U4
+Added Component: Designator=U?(LD117vxx)
+Added Pin To Net: NetName=GND Pin=U?-1
+Added Pin To Net: NetName=+3.3V Pin=U?-2
+Added Pin To Net: NetName=+5V Pin=U?-3
+Added Member To Class: ClassName=U_Voeding Member=Component U? LD1117V33
+Added Room: Name=Top
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_RC reciever
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding
