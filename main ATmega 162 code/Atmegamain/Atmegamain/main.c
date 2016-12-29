@@ -10,8 +10,24 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <stdint.h>
+void EnableTranslator ( int );
+void EnableESP8266 ( int );
 
 
-//void trigUltrasoon( void );
+
+
+void main ( void )
+{
+}
+
+void EnableEsp8266 ( int enableModulle )
+{
+	if( enableModulle == 0 )
+	{
+		
+		
+	}
+	
+}
 
 

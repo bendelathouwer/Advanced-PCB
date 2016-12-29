@@ -345,6 +345,23 @@ GenerateClassCluster=0
 DocumentUniqueId=NOFYKXWV
 
 [Document19]
+DocumentPath=Top.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=3
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VREKNOIQ
+
+[Document20]
 DocumentPath=LevelShifter.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -361,7 +378,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CGYWUWND
 
-[Document20]
+[Document21]
 DocumentPath=ATmegaMain.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -378,7 +395,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFHYWAPU
 
-[Document21]
+[Document22]
 DocumentPath=encoder.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -395,7 +412,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NUMUXBVM
 
-[Document22]
+[Document23]
 DocumentPath=Voeding.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -412,7 +429,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PNXOVMSY
 
-[Document23]
+[Document24]
 DocumentPath=Atmega secondary.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -429,7 +446,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ECTHSKPD
 
-[Document24]
+[Document25]
 DocumentPath=ESP8266.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -445,23 +462,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GMCCWPYO
-
-[Document25]
-DocumentPath=Top.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HYQFQOJF
 
 [Document26]
 DocumentPath=VNH3SP30-E.SchLib
@@ -597,7 +597,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JYDRRPWO
+DocumentUniqueId=VCYUJNJQ
 
 [Document34]
 DocumentPath=fuse.SchLib
