@@ -1,0 +1,155 @@
+
+Atmega Main code.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000f4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .comment      00000030  00000000  00000000  00000148  2**0
+                  CONTENTS, READONLY
+  2 .debug_aranges 00000050  00000000  00000000  00000178  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00000275  00000000  00000000  000001c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000152  00000000  00000000  0000043d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000001af  00000000  00000000  0000058f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000084  00000000  00000000  00000740  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    0000020c  00000000  00000000  000007c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_ranges 00000040  00000000  00000000  000009d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 38 00 	jmp	0x70	; 0x70 <__ctors_end>
+   4:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+   8:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+   c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  10:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  14:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  18:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  1c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  20:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  24:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  28:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  2c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  30:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  34:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  38:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  3c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  40:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  44:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  48:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  4c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  50:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  54:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  58:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  5c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  60:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  64:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  68:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  6c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+
+00000070 <__ctors_end>:
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ef       	ldi	r28, 0xFF	; 255
+  76:	d4 e0       	ldi	r29, 0x04	; 4
+  78:	de bf       	out	0x3e, r29	; 62
+  7a:	cd bf       	out	0x3d, r28	; 61
+  7c:	0e 94 57 00 	call	0xae	; 0xae <main>
+  80:	0c 94 78 00 	jmp	0xf0	; 0xf0 <_exit>
+
+00000084 <__bad_interrupt>:
+  84:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000088 <EnableLevelConvertor>:
+		//write Enable (on esp) pin low
+	}
+}
+void EnableLevelConvertor ( int Enable )
+{
+	DDRC|= (1<<DDRC); 
+  88:	64 b3       	in	r22, 0x14	; 20
+  8a:	24 b3       	in	r18, 0x14	; 20
+  8c:	41 e0       	ldi	r20, 0x01	; 1
+  8e:	50 e0       	ldi	r21, 0x00	; 0
+  90:	fa 01       	movw	r30, r20
+  92:	02 c0       	rjmp	.+4      	; 0x98 <EnableLevelConvertor+0x10>
+  94:	ee 0f       	add	r30, r30
+  96:	ff 1f       	adc	r31, r31
+  98:	2a 95       	dec	r18
+  9a:	e2 f7       	brpl	.-8      	; 0x94 <EnableLevelConvertor+0xc>
+  9c:	9f 01       	movw	r18, r30
+  9e:	26 2b       	or	r18, r22
+  a0:	24 bb       	out	0x14, r18	; 20
+	if ( Enable == 1 )
+  a2:	01 97       	sbiw	r24, 0x01	; 1
+  a4:	11 f4       	brne	.+4      	; 0xaa <EnableLevelConvertor+0x22>
+	{
+		 PORTC |= (1<<PORTC0);    
+  a6:	a8 9a       	sbi	0x15, 0	; 21
+  a8:	08 95       	ret
+	}
+	else
+	{
+		PORTC &= ~(1<<PORTC0);   
+  aa:	a8 98       	cbi	0x15, 0	; 21
+  ac:	08 95       	ret
+
+000000ae <main>:
+	 
+	
+    while ( 1 ) 
+    {
+		
+		EnableLevelConvertor( 1 );
+  ae:	81 e0       	ldi	r24, 0x01	; 1
+  b0:	90 e0       	ldi	r25, 0x00	; 0
+  b2:	0e 94 44 00 	call	0x88	; 0x88 <EnableLevelConvertor>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  b6:	24 e5       	ldi	r18, 0x54	; 84
+  b8:	3d ec       	ldi	r19, 0xCD	; 205
+  ba:	8d e2       	ldi	r24, 0x2D	; 45
+  bc:	93 e0       	ldi	r25, 0x03	; 3
+  be:	21 50       	subi	r18, 0x01	; 1
+  c0:	30 40       	sbci	r19, 0x00	; 0
+  c2:	80 40       	sbci	r24, 0x00	; 0
+  c4:	90 40       	sbci	r25, 0x00	; 0
+  c6:	d9 f7       	brne	.-10     	; 0xbe <main+0x10>
+  c8:	00 c0       	rjmp	.+0      	; 0xca <main+0x1c>
+  ca:	00 c0       	rjmp	.+0      	; 0xcc <main+0x1e>
+  cc:	00 00       	nop
+		_delay_ms (1000);
+		EnableLevelConvertor( 0 );
+  ce:	80 e0       	ldi	r24, 0x00	; 0
+  d0:	90 e0       	ldi	r25, 0x00	; 0
+  d2:	0e 94 44 00 	call	0x88	; 0x88 <EnableLevelConvertor>
+  d6:	24 e5       	ldi	r18, 0x54	; 84
+  d8:	3d ec       	ldi	r19, 0xCD	; 205
+  da:	8d e2       	ldi	r24, 0x2D	; 45
+  dc:	93 e0       	ldi	r25, 0x03	; 3
+  de:	21 50       	subi	r18, 0x01	; 1
+  e0:	30 40       	sbci	r19, 0x00	; 0
+  e2:	80 40       	sbci	r24, 0x00	; 0
+  e4:	90 40       	sbci	r25, 0x00	; 0
+  e6:	d9 f7       	brne	.-10     	; 0xde <main+0x30>
+  e8:	00 c0       	rjmp	.+0      	; 0xea <main+0x3c>
+  ea:	00 c0       	rjmp	.+0      	; 0xec <main+0x3e>
+  ec:	00 00       	nop
+  ee:	df cf       	rjmp	.-66     	; 0xae <main>
+
+000000f0 <_exit>:
+  f0:	f8 94       	cli
+
+000000f2 <__stop_program>:
+  f2:	ff cf       	rjmp	.-2      	; 0xf2 <__stop_program>

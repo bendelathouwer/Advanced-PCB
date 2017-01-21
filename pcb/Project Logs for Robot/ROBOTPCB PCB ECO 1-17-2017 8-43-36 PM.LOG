@@ -1,0 +1,84 @@
+Removed Pin From Net: NetName=+5V Pin=C15-1
+Removed Pin From Net: NetName=+5V Pin=C16-1
+Removed Pin From Net: NetName=+5V Pin=C17-1
+Removed Pin From Net: NetName=+5V Pin=C18-1
+Removed Pin From Net: NetName=VMOT Pin=C19-1
+Removed Pin From Net: NetName=VMOT Pin=C20-1
+Removed Pin From Net: NetName=+5V Pin=C41-1
+Removed Pin From Net: NetName=GND Pin=C41-2
+Removed Pin From Net: NetName=+5V Pin=C42-1
+Removed Pin From Net: NetName=GND Pin=C42-2
+Removed Pin From Net: NetName=+5V Pin=C60-1
+Removed Pin From Net: NetName=GND Pin=C60-2
+Removed Pin From Net: NetName=+5V Pin=C61-1
+Removed Pin From Net: NetName=GND Pin=C61-2
+Removed Pin From Net: NetName=+3.3V Pin=C62-1
+Removed Pin From Net: NetName=GND Pin=C62-2
+Removed Pin From Net: NetName=+3.3V Pin=C63-1
+Removed Pin From Net: NetName=GND Pin=C63-2
+Removed Pin From Net: NetName=+5V Pin=U14-1
+Removed Pin From Net: NetName=GND Pin=U14-4
+Removed Member From Class: ClassName=U_Atmega secondary Member=C15
+Removed Member From Class: ClassName=U_Atmega secondary Member=C16
+Removed Member From Class: ClassName=U_Atmega secondary Member=C17
+Removed Member From Class: ClassName=U_Atmega secondary Member=C18
+Removed Member From Class: ClassName=U_motordriver Member=C21
+Removed Member From Class: ClassName=U_motordriver Member=C22
+Removed Member From Class: ClassName=U_encoder Member=C27
+Removed Member From Class: ClassName=U_encoder Member=C28
+Removed Member From Class: ClassName=U_encoder Member=C29
+Removed Member From Class: ClassName=U_encoder Member=C30
+Removed Member From Class: ClassName=U_ATmegaMain Member=C41
+Removed Member From Class: ClassName=U_ATmegaMain Member=C42
+Removed Member From Class: ClassName=U_ultrasoon sensor Member=C60
+Removed Member From Class: ClassName=U_ultrasoon sensor Member=C61
+Removed Member From Class: ClassName=U_Voeding Member=C62
+Removed Member From Class: ClassName=U_Voeding Member=C63
+Removed Member From Class: ClassName=U_encoder Member=CON5
+Removed Member From Class: ClassName=U_encoder Member=CON6
+Removed Member From Class: ClassName=U_encoder Member=CON7
+Removed Member From Class: ClassName=U_encoder Member=CON8
+Added Component: Designator=C23(C0805)
+Added Component: Designator=C24(C0805)
+Added Component: Designator=C25(C0805)
+Added Component: Designator=C26(C0805)
+Added Pin To Net: NetName=+3.3V Pin=C15-1
+Added Pin To Net: NetName=+3.3V Pin=C16-1
+Added Pin To Net: NetName=VMOT Pin=C17-1
+Added Pin To Net: NetName=VMOT Pin=C18-1
+Added Pin To Net: NetName=+5V Pin=C19-1
+Added Pin To Net: NetName=+5V Pin=C20-1
+Added Pin To Net: NetName=+5V Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=+5V Pin=C24-1
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=+5V Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=+5V Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Change Class Name : Old Net Name=U_encoder New Net Name=U_RC reciever
+Added Class: Name=U_encoder
+Added Member To Class: ClassName=U_Voeding Member=Component C15 Cap Pol3
+Added Member To Class: ClassName=U_Voeding Member=Component C16 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C17 Cap Pol3
+Added Member To Class: ClassName=U_motordriver Member=Component C18 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C27 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C28 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C29 Cap Pol3
+Added Member To Class: ClassName=U_Atmega secondary Member=Component C30 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C35 Cap Pol3
+Added Member To Class: ClassName=U_ATmegaMain Member=Component C36 Cap Pol3
+Added Member To Class: ClassName=U_ultrasoon sensor Member=Component C37 Cap Pol3
+Added Member To Class: ClassName=U_ultrasoon sensor Member=Component C38 Cap Pol3
+Added Member To Class: ClassName=U_RC reciever Member=Component CON11 RCcon
+Added Member To Class: ClassName=U_RC reciever Member=Component CON12 RCcon
+Added Room: Name=Top
+Added Room: Name=U_ATmegaMain
+Added Room: Name=U_Atmega secondary
+Added Room: Name=U_encoder
+Added Room: Name=U_ESP8266
+Added Room: Name=U_LevelShifter
+Added Room: Name=U_motordriver
+Added Room: Name=U_RC reciever
+Added Room: Name=U_ultrasoon sensor
+Added Room: Name=U_Voeding

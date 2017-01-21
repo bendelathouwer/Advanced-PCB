@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Atmega162 secondary code", "Atmega162 secondary code\Atmega162 secondary code.cproj", "{C039B574-6678-4EB6-864B-3C17A8BDC101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C039B574-6678-4EB6-864B-3C17A8BDC101}.Debug|AVR.ActiveCfg = Debug|AVR
+		{C039B574-6678-4EB6-864B-3C17A8BDC101}.Debug|AVR.Build.0 = Debug|AVR
+		{C039B574-6678-4EB6-864B-3C17A8BDC101}.Release|AVR.ActiveCfg = Release|AVR
+		{C039B574-6678-4EB6-864B-3C17A8BDC101}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

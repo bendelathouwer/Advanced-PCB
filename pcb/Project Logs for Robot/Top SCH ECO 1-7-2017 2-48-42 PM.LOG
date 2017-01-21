@@ -1,0 +1,18 @@
+Change Pin Designator/Name:  Old Designator=U1-3 Old Name=A2 New Designator =B7 New Name=13
+Change Pin Designator/Name:  Old Designator=U1-4 Old Name=A3 New Designator =B6 New Name=14
+Change Pin Designator/Name:  Old Designator=U1-5 Old Name=A4 New Designator =B5 New Name=15
+Change Pin Designator/Name:  Old Designator=U1-6 Old Name=A5 New Designator =B4 New Name=16
+Change Pin Designator/Name:  Old Designator=U1-7 Old Name=A6 New Designator =B3 New Name=17
+Change Pin Designator/Name:  Old Designator=U1-8 Old Name=A7 New Designator =B2 New Name=18
+Change Pin Designator/Name:  Old Designator=U1-13 Old Name=B7 New Designator =A2 New Name=3
+Change Pin Designator/Name:  Old Designator=U1-14 Old Name=B6 New Designator =A6 New Name=7
+Change Pin Designator/Name:  Old Designator=U1-15 Old Name=B5 New Designator =A5 New Name=6
+Change Pin Designator/Name:  Old Designator=U1-16 Old Name=B4 New Designator =A4 New Name=5
+Change Pin Designator/Name:  Old Designator=U1-17 Old Name=B3 New Designator =A3 New Name=4
+Change Pin Designator/Name:  Old Designator=U1-18 Old Name=B2 New Designator =A7 New Name=8
+Change Pin Designator/Name:  Old Designator=U2-36 Old Name=PA1 (AD1/PCINT1) New Designator =PA0 (AD0/PCINT0) New Name=37
+Change Pin Designator/Name:  Old Designator=U2-37 Old Name=PA0 (AD0/PCINT0) New Designator =PA1 (AD1/PCINT1) New Name=36
+Change Pin Designator/Name:  Old Designator=U5-18 Old Name=(A8/PCINT8) PC0 New Designator =(A9/PCINT9) PC1 New Name=19
+Change Pin Designator/Name:  Old Designator=U5-19 Old Name=(A9/PCINT9) PC1 New Designator =(A8/PCINT8) PC0 New Name=18
+Change Pin Designator/Name:  Old Designator=U14-2 Old Name=trig New Designator =echo New Name=3
+Change Pin Designator/Name:  Old Designator=U14-3 Old Name=echo New Designator =trig New Name=2
