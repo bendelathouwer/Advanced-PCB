@@ -10,10 +10,10 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <stdint.h>
+#include <util/delay.h>
 
 
 //function prototypes
-void enableMotorDriver ( int enable );
 
 void BotForward ( void );
 void BotBackwards( void  );
@@ -34,23 +34,18 @@ int  main( void )
 	
 	while ( 1 ) 
     {
-		int enable = 1;
-		enableMotorDriver( enable );
+		BotForward();
+		_delay_ms(5000);
+		BotBackwards();
+		_delay_ms(5000);
+		BotLeft();
+		_delay_ms(5000);
+		BotRight();
+		_delay_ms(5000);
+		BotStop();
+		_delay_ms(5000);
 		
     }
-}
-
-void enableMotorDriver ( int enableDriver )
-{
-	if(enableDriver == 1 )
-	{
-		PORTA |= (1<<PORTA3);
-	}
-	else 
-	{
-		PORTA &= ~(1<<PORTA3);
-	}
-	
 }
 
 // both motors clockwise

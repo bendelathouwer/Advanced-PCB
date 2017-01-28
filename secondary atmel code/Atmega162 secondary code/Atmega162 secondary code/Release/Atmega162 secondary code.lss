@@ -3,9 +3,9 @@ Atmega162 secondary code.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000000ac  00000000  00000000  00000054  2**1
+  0 .text         0000014c  00000000  00000000  00000054  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .comment      00000030  00000000  00000000  00000100  2**0
+  1 .comment      00000030  00000000  00000000  000001a0  2**0
                   CONTENTS, READONLY
 
 Disassembly of section .text:
@@ -47,33 +47,117 @@ Disassembly of section .text:
   76:	d4 e0       	ldi	r29, 0x04	; 4
   78:	de bf       	out	0x3e, r29	; 62
   7a:	cd bf       	out	0x3d, r28	; 61
-  7c:	0e 94 4a 00 	call	0x94	; 0x94 <main>
-  80:	0c 94 54 00 	jmp	0xa8	; 0xa8 <_exit>
+  7c:	0e 94 62 00 	call	0xc4	; 0xc4 <main>
+  80:	0c 94 a4 00 	jmp	0x148	; 0x148 <_exit>
 
 00000084 <__bad_interrupt>:
   84:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
-00000088 <enableMotorDriver>:
-  88:	01 97       	sbiw	r24, 0x01	; 1
-  8a:	11 f4       	brne	.+4      	; 0x90 <enableMotorDriver+0x8>
+00000088 <BotForward>:
+  88:	d9 98       	cbi	0x1b, 1	; 27
+  8a:	da 9a       	sbi	0x1b, 2	; 27
   8c:	db 9a       	sbi	0x1b, 3	; 27
-  8e:	08 95       	ret
-  90:	db 98       	cbi	0x1b, 3	; 27
+  8e:	dc 98       	cbi	0x1b, 4	; 27
+  90:	dd 9a       	sbi	0x1b, 5	; 27
   92:	08 95       	ret
 
-00000094 <main>:
-  94:	8a b3       	in	r24, 0x1a	; 26
-  96:	8f 67       	ori	r24, 0x7F	; 127
-  98:	8a bb       	out	0x1a, r24	; 26
-  9a:	d8 9a       	sbi	0x1b, 0	; 27
-  9c:	de 9a       	sbi	0x1b, 6	; 27
-  9e:	81 e0       	ldi	r24, 0x01	; 1
-  a0:	90 e0       	ldi	r25, 0x00	; 0
-  a2:	0e 94 44 00 	call	0x88	; 0x88 <enableMotorDriver>
-  a6:	fb cf       	rjmp	.-10     	; 0x9e <main+0xa>
+00000094 <BotBackwards>:
+  94:	d9 9a       	sbi	0x1b, 1	; 27
+  96:	da 98       	cbi	0x1b, 2	; 27
+  98:	db 9a       	sbi	0x1b, 3	; 27
+  9a:	dc 9a       	sbi	0x1b, 4	; 27
+  9c:	dd 98       	cbi	0x1b, 5	; 27
+  9e:	08 95       	ret
 
-000000a8 <_exit>:
-  a8:	f8 94       	cli
+000000a0 <BotLeft>:
+  a0:	d9 98       	cbi	0x1b, 1	; 27
+  a2:	da 9a       	sbi	0x1b, 2	; 27
+  a4:	db 9a       	sbi	0x1b, 3	; 27
+  a6:	dc 9a       	sbi	0x1b, 4	; 27
+  a8:	dd 98       	cbi	0x1b, 5	; 27
+  aa:	08 95       	ret
 
-000000aa <__stop_program>:
-  aa:	ff cf       	rjmp	.-2      	; 0xaa <__stop_program>
+000000ac <BotRight>:
+  ac:	d9 9a       	sbi	0x1b, 1	; 27
+  ae:	da 98       	cbi	0x1b, 2	; 27
+  b0:	db 9a       	sbi	0x1b, 3	; 27
+  b2:	dc 9a       	sbi	0x1b, 4	; 27
+  b4:	dd 98       	cbi	0x1b, 5	; 27
+  b6:	08 95       	ret
+
+000000b8 <BotStop>:
+  b8:	d9 9a       	sbi	0x1b, 1	; 27
+  ba:	da 9a       	sbi	0x1b, 2	; 27
+  bc:	db 98       	cbi	0x1b, 3	; 27
+  be:	dc 9a       	sbi	0x1b, 4	; 27
+  c0:	dd 9a       	sbi	0x1b, 5	; 27
+  c2:	08 95       	ret
+
+000000c4 <main>:
+  c4:	8a b3       	in	r24, 0x1a	; 26
+  c6:	8f 67       	ori	r24, 0x7F	; 127
+  c8:	8a bb       	out	0x1a, r24	; 26
+  ca:	d8 9a       	sbi	0x1b, 0	; 27
+  cc:	de 9a       	sbi	0x1b, 6	; 27
+  ce:	0e 94 44 00 	call	0x88	; 0x88 <BotForward>
+  d2:	2a ea       	ldi	r18, 0xAA	; 170
+  d4:	32 e0       	ldi	r19, 0x02	; 2
+  d6:	85 ee       	ldi	r24, 0xE5	; 229
+  d8:	9f e0       	ldi	r25, 0x0F	; 15
+  da:	21 50       	subi	r18, 0x01	; 1
+  dc:	30 40       	sbci	r19, 0x00	; 0
+  de:	80 40       	sbci	r24, 0x00	; 0
+  e0:	90 40       	sbci	r25, 0x00	; 0
+  e2:	d9 f7       	brne	.-10     	; 0xda <main+0x16>
+  e4:	00 00       	nop
+  e6:	0e 94 4a 00 	call	0x94	; 0x94 <BotBackwards>
+  ea:	2a ea       	ldi	r18, 0xAA	; 170
+  ec:	32 e0       	ldi	r19, 0x02	; 2
+  ee:	85 ee       	ldi	r24, 0xE5	; 229
+  f0:	9f e0       	ldi	r25, 0x0F	; 15
+  f2:	21 50       	subi	r18, 0x01	; 1
+  f4:	30 40       	sbci	r19, 0x00	; 0
+  f6:	80 40       	sbci	r24, 0x00	; 0
+  f8:	90 40       	sbci	r25, 0x00	; 0
+  fa:	d9 f7       	brne	.-10     	; 0xf2 <main+0x2e>
+  fc:	00 00       	nop
+  fe:	0e 94 50 00 	call	0xa0	; 0xa0 <BotLeft>
+ 102:	2a ea       	ldi	r18, 0xAA	; 170
+ 104:	32 e0       	ldi	r19, 0x02	; 2
+ 106:	85 ee       	ldi	r24, 0xE5	; 229
+ 108:	9f e0       	ldi	r25, 0x0F	; 15
+ 10a:	21 50       	subi	r18, 0x01	; 1
+ 10c:	30 40       	sbci	r19, 0x00	; 0
+ 10e:	80 40       	sbci	r24, 0x00	; 0
+ 110:	90 40       	sbci	r25, 0x00	; 0
+ 112:	d9 f7       	brne	.-10     	; 0x10a <main+0x46>
+ 114:	00 00       	nop
+ 116:	0e 94 56 00 	call	0xac	; 0xac <BotRight>
+ 11a:	2a ea       	ldi	r18, 0xAA	; 170
+ 11c:	32 e0       	ldi	r19, 0x02	; 2
+ 11e:	85 ee       	ldi	r24, 0xE5	; 229
+ 120:	9f e0       	ldi	r25, 0x0F	; 15
+ 122:	21 50       	subi	r18, 0x01	; 1
+ 124:	30 40       	sbci	r19, 0x00	; 0
+ 126:	80 40       	sbci	r24, 0x00	; 0
+ 128:	90 40       	sbci	r25, 0x00	; 0
+ 12a:	d9 f7       	brne	.-10     	; 0x122 <main+0x5e>
+ 12c:	00 00       	nop
+ 12e:	0e 94 5c 00 	call	0xb8	; 0xb8 <BotStop>
+ 132:	2a ea       	ldi	r18, 0xAA	; 170
+ 134:	32 e0       	ldi	r19, 0x02	; 2
+ 136:	85 ee       	ldi	r24, 0xE5	; 229
+ 138:	9f e0       	ldi	r25, 0x0F	; 15
+ 13a:	21 50       	subi	r18, 0x01	; 1
+ 13c:	30 40       	sbci	r19, 0x00	; 0
+ 13e:	80 40       	sbci	r24, 0x00	; 0
+ 140:	90 40       	sbci	r25, 0x00	; 0
+ 142:	d9 f7       	brne	.-10     	; 0x13a <main+0x76>
+ 144:	00 00       	nop
+ 146:	c3 cf       	rjmp	.-122    	; 0xce <main+0xa>
+
+00000148 <_exit>:
+ 148:	f8 94       	cli
+
+0000014a <__stop_program>:
+ 14a:	ff cf       	rjmp	.-2      	; 0x14a <__stop_program>

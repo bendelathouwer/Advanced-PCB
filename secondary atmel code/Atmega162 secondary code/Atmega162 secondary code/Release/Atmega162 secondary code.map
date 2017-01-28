@@ -10,14 +10,6 @@ Discarded input sections
  .text          0x00000000        0x0 Atmega162 secondary code.o
  .data          0x00000000        0x0 Atmega162 secondary code.o
  .bss           0x00000000        0x0 Atmega162 secondary code.o
- .text.BotForward
-                0x00000000        0xc Atmega162 secondary code.o
- .text.BotBackwards
-                0x00000000        0xc Atmega162 secondary code.o
- .text.BotLeft  0x00000000        0xc Atmega162 secondary code.o
- .text.BotRight
-                0x00000000        0xc Atmega162 secondary code.o
- .text.BotStop  0x00000000        0xc Atmega162 secondary code.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
@@ -151,7 +143,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0xac
+.text           0x00000000      0x14c
  *(.vectors)
  .vectors       0x00000000       0x70 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm162.o
                 0x00000000                __vector_default
@@ -234,17 +226,27 @@ END GROUP
                 0x00000084                __vector_20
                 0x00000088                . = ALIGN (0x2)
  *(.text.*)
- .text.enableMotorDriver
+ .text.BotForward
                 0x00000088        0xc Atmega162 secondary code.o
-                0x00000088                enableMotorDriver
+                0x00000088                BotForward
+ .text.BotBackwards
+                0x00000094        0xc Atmega162 secondary code.o
+                0x00000094                BotBackwards
+ .text.BotLeft  0x000000a0        0xc Atmega162 secondary code.o
+                0x000000a0                BotLeft
+ .text.BotRight
+                0x000000ac        0xc Atmega162 secondary code.o
+                0x000000ac                BotRight
+ .text.BotStop  0x000000b8        0xc Atmega162 secondary code.o
+                0x000000b8                BotStop
  .text.startup.main
-                0x00000094       0x14 Atmega162 secondary code.o
-                0x00000094                main
-                0x000000a8                . = ALIGN (0x2)
+                0x000000c4       0x84 Atmega162 secondary code.o
+                0x000000c4                main
+                0x00000148                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
-                0x000000a8                _exit
-                0x000000a8                exit
+ .fini9         0x00000148        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x00000148                _exit
+                0x00000148                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -263,11 +265,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000a8        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000148        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000000ac                _etext = .
+                0x0000014c                _etext = .
 
-.data           0x00800100        0x0 load address 0x000000ac
+.data           0x00800100        0x0 load address 0x0000014c
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -284,8 +286,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x00800100                PROVIDE (__bss_end, .)
-                0x000000ac                __data_load_start = LOADADDR (.data)
-                0x000000ac                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000014c                __data_load_start = LOADADDR (.data)
+                0x0000014c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 0x00800060                PROVIDE (__noinit_start, .)
