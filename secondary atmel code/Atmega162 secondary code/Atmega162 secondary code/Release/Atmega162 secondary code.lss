@@ -7,20 +7,6 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   1 .comment      00000030  00000000  00000000  00000100  2**0
                   CONTENTS, READONLY
-  2 .debug_aranges 00000050  00000000  00000000  00000130  2**0
-                  CONTENTS, READONLY, DEBUGGING
-  3 .debug_info   00000151  00000000  00000000  00000180  2**0
-                  CONTENTS, READONLY, DEBUGGING
-  4 .debug_abbrev 000000c5  00000000  00000000  000002d1  2**0
-                  CONTENTS, READONLY, DEBUGGING
-  5 .debug_line   0000013f  00000000  00000000  00000396  2**0
-                  CONTENTS, READONLY, DEBUGGING
-  6 .debug_frame  00000084  00000000  00000000  000004d8  2**2
-                  CONTENTS, READONLY, DEBUGGING
-  7 .debug_str    000001c5  00000000  00000000  0000055c  2**0
-                  CONTENTS, READONLY, DEBUGGING
-  8 .debug_ranges 00000040  00000000  00000000  00000721  2**0
-                  CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
@@ -68,46 +54,19 @@ Disassembly of section .text:
   84:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
 00000088 <enableMotorDriver>:
-    }
-}
-
-void enableMotorDriver ( int enableDriver )
-{
-	if(enableDriver == 1 )
   88:	01 97       	sbiw	r24, 0x01	; 1
   8a:	11 f4       	brne	.+4      	; 0x90 <enableMotorDriver+0x8>
-	{
-		PORTA |= (1<<PORTA3);
   8c:	db 9a       	sbi	0x1b, 3	; 27
   8e:	08 95       	ret
-	}
-	else 
-	{
-		PORTA &= ~(1<<PORTA3);
   90:	db 98       	cbi	0x1b, 3	; 27
   92:	08 95       	ret
 
 00000094 <main>:
-
-
-int  main( void )
-{
-	 
-	DDRA|= ( 1<<PORTA0) |( 1<<PORTA1 ) |( 1<<PORTA2 ) |(1<<PORTA3) |(1<<PORTA4) |(1<<PORTA5) |(1<<PORTA6);//setting the port a pins (0 to 6) as an output 
   94:	8a b3       	in	r24, 0x1a	; 26
   96:	8f 67       	ori	r24, 0x7F	; 127
   98:	8a bb       	out	0x1a, r24	; 26
-    
-	PORTA |= (1<<PORTA0);//setting pwmB high
   9a:	d8 9a       	sbi	0x1b, 0	; 27
-	PORTA |= (1<<PORTA6);//setting pwmA high
   9c:	de 9a       	sbi	0x1b, 6	; 27
-	
-	
-	while ( 1 ) 
-    {
-		int enable = 1;
-		enableMotorDriver( enable );
   9e:	81 e0       	ldi	r24, 0x01	; 1
   a0:	90 e0       	ldi	r25, 0x00	; 0
   a2:	0e 94 44 00 	call	0x88	; 0x88 <enableMotorDriver>
