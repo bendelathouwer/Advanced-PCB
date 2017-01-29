@@ -10,6 +10,9 @@ Discarded input sections
  .text          0x00000000        0x0 Atmega162 secondary code.o
  .data          0x00000000        0x0 Atmega162 secondary code.o
  .bss           0x00000000        0x0 Atmega162 secondary code.o
+ .text.wait     0x00000000       0x14 Atmega162 secondary code.o
+ .text.togglePortABit
+                0x00000000       0x16 Atmega162 secondary code.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
@@ -143,7 +146,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x14c
+.text           0x00000000      0x1e0
  *(.vectors)
  .vectors       0x00000000       0x70 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm162.o
                 0x00000000                __vector_default
@@ -226,27 +229,31 @@ END GROUP
                 0x00000084                __vector_20
                 0x00000088                . = ALIGN (0x2)
  *(.text.*)
- .text.BotForward
-                0x00000088        0xc Atmega162 secondary code.o
-                0x00000088                BotForward
- .text.BotBackwards
-                0x00000094        0xc Atmega162 secondary code.o
-                0x00000094                BotBackwards
- .text.BotLeft  0x000000a0        0xc Atmega162 secondary code.o
-                0x000000a0                BotLeft
- .text.BotRight
-                0x000000ac        0xc Atmega162 secondary code.o
-                0x000000ac                BotRight
- .text.BotStop  0x000000b8        0xc Atmega162 secondary code.o
-                0x000000b8                BotStop
+ .text.setPortABit
+                0x00000088       0x16 Atmega162 secondary code.o
+                0x00000088                setPortABit
+ .text.clearPortABit
+                0x0000009e       0x18 Atmega162 secondary code.o
+                0x0000009e                clearPortABit
+ .text.botForward
+                0x000000b6       0x20 Atmega162 secondary code.o
+                0x000000b6                botForward
+ .text.botBackward
+                0x000000d6       0x20 Atmega162 secondary code.o
+                0x000000d6                botBackward
+ .text.botLeft  0x000000f6       0x20 Atmega162 secondary code.o
+                0x000000f6                botLeft
+ .text.botRight
+                0x00000116       0x20 Atmega162 secondary code.o
+                0x00000116                botRight
  .text.startup.main
-                0x000000c4       0x84 Atmega162 secondary code.o
-                0x000000c4                main
-                0x00000148                . = ALIGN (0x2)
+                0x00000136       0xa6 Atmega162 secondary code.o
+                0x00000136                main
+                0x000001dc                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000148        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
-                0x00000148                _exit
-                0x00000148                exit
+ .fini9         0x000001dc        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x000001dc                _exit
+                0x000001dc                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -265,11 +272,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000148        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+ .fini0         0x000001dc        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000014c                _etext = .
+                0x000001e0                _etext = .
 
-.data           0x00800100        0x0 load address 0x0000014c
+.data           0x00800100        0x0 load address 0x000001e0
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -286,8 +293,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x00800100                PROVIDE (__bss_end, .)
-                0x0000014c                __data_load_start = LOADADDR (.data)
-                0x0000014c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000001e0                __data_load_start = LOADADDR (.data)
+                0x000001e0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 0x00800060                PROVIDE (__noinit_start, .)
